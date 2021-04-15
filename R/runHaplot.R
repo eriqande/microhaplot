@@ -1,20 +1,3 @@
-#' Run shiny microhaplot
-#'
-#' Run shiny microhaplot app
-#' @param path Path to shiny microhaplot app. Optional. If not specified, the path is default to local app path.
-#' @return Runs shiny microhaplot application via \code{shiny::runApp} which typically doesn't return; interrupt R to stop the application (usually by pressing Ctrl+C or Esc).
-#' @export
-#' @examples
-#' if(interactive()){
-#' runShinyHaplot()
-#' }
-runShinyHaplot <- function(path = system.file("shiny", "microhaplot", package = "microhaplot")) {
-  if (path == "" || !file.exists(path)) {
-    #stop("Could not find Shiny directory. Try re-installing `mypackage`.", call. = FALSE)
-    stop("Could not find Shiny directory", call. = FALSE)
-  }
-  shiny::runApp(path, display.mode = "normal")
-}
 
 #' Transfer a copy of microhaplot app.
 #'
