@@ -1,4 +1,4 @@
-Package: microhaplot
+Package: microhaplotextract
 Type: Package
 Title: Microhaplotype Constructor and Visualizer
 Version: 1.0.2
