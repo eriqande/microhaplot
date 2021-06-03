@@ -10,9 +10,9 @@
 #' mvShinyHaplot(tempdir())
 #'
 mvShinyHaplot <- function(path) {
-  app.dir <- system.file("shiny", "microhaplot", package = "microhaplot")
+  app.dir <- system.file("shiny", "microhaplot", package = "microhaplotextract")
   if (app.dir == "") {
-    stop("Could not find shiny directory. Try re-installing `mypackage`.", call. = FALSE)
+    stop("Could not find microhaplotextract's installed `shiny` directory in the R library path. Try re-installing `microhaplotextract`.", call. = FALSE)
   }
 
   if (!file.exists(paste0(path))) dir.create(path)
